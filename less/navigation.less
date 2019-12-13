@@ -24,6 +24,10 @@
         padding-left: 12%;
         font-size: medium;
         text-decoration: none;
+
+        @media @mobile {
+            padding-left: 0%;
+        }
     }
 
     nav {
@@ -33,12 +37,14 @@
         padding-left: 10%;
         @media @mobile {
             width: 100%;
+            .align-column(flex, row, center);
+            justify-content: space-between;
+            padding-left: 0%;
         }
     }
 
     @media @mobile {
-        display: flex;
-        flex-direction: column;
+        .align-column(flex, column, center)
     }
 
 }

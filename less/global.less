@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  border: 1px solid black;
 }
 
 html {
@@ -14,6 +13,7 @@ html, body {
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
 }
+
 
 h1 {
   font-size: 4rem;
@@ -44,4 +44,7 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  @media @mobile {
+    width: 90%;
+  }
 }
