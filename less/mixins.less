@@ -1,6 +1,12 @@
 // Mixins in here
-.custom-butt(@b-radius, @bg-color, @f-color) {
+.custom-butt(@b-radius, @f-color, @bg-color) {
     border-radius: @b-radius;
     background-color: @bg-color;
     color: @f-color;
+}
+
+.custom-butt-ani(@curs, @trans, @bg-color) {
+    transition: @trans;
+    background-color: @bg-color;
+    cursor: @curs;
 }
