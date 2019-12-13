@@ -1,7 +1,36 @@
 // Navigation Styles here
-header {
-display: flex;
-justify-content: space-around;
-align-items: baseline;
-border-bottom: 1px dashed black;
+.nav-header {
+    width: 100%;
+    border-top: 2px dashed silver;
+    background: @sandy-beach;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 2%;
+
+    header {
+        text-align: center;
+        color: @font-color;
+        font-size: 1.6rem;
+    }
+
+    h1 {
+
+        text-align: center;
+    }
+    
+    a {
+        color: black;
+        padding-left: 12%;
+        font-size: medium;
+        text-decoration: none;
+    }
+
+    nav {
+        width:  50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 10%;
+    }
+
 }
